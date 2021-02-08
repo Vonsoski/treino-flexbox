@@ -1,3 +1,6 @@
+*{
+    font-family: Arial;
+}
 body{
 margin: 0;
 padding: 0;
@@ -51,8 +54,97 @@ nav a:hover {
 /*Banner*/
 
 #banner{
+    display: flex;
+    justify-content: center;
     background-image: url(../img/photo-1514415008039-efa173293080.jfif);
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 800px;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner-headline{
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.banner-headline h1{
+    color: #3aa5df;
+    font-size: 60px;
+    text-shadow: 1px 1px rgb(214, 207, 207);
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.banner-headline h2{
+    color: #3aa5df;
+    font-size: 25px;
+    text-shadow: 1px 1px #94b8ca;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin-top: 30px;
+}
+/*banners*/
+.banner-options{
+height: 210px;
+display: flex;
+
+}
+
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    padding: 20px;
+    
+}
+
+.banner1{
+    background-color: #29aaeb96;
+    color: white;
+    
+}
+.banner2{
+    background-color: #0b638f96;
+    color: white;
+    
+}
+.banner3{
+    background-color: #0a435f96;
+    color: white;
+    
+}
+
+.banner-title{
+    font-size: 20px;
+}
+
+.banner-desc{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-options a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+}
+
+.name1{
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
 }
