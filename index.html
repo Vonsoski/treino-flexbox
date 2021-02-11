@@ -4,7 +4,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
     <link rel="shortcut icon" href="img/Safety_Seal_944x655.png">
+
+    <script type="text/javascript">
+    window.onload = function(){
+document.querySelector(".menu-mobile").addEventListener("click",function(){
+    if(document.querySelector(".menu nav ul").style.display == 'flex'){
+        document.querySelector(".menu nav ul").style.display = 'none';
+    } else {
+        document.querySelector(".menu nav ul").style.display = 'flex';
+    }
+        });
+    };
+    </script>
     <title>Banner Health</title>
 </head>
 <body>
@@ -15,6 +28,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menu-mobile">
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
                         <li><a href="">Careers</a></A></li>
